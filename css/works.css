@@ -1,0 +1,181 @@
+body {
+    background-image: url(../img/main-background.jpg);
+    font-family: serif;
+    color: white;
+}
+
+header {
+    background-color: rgb(255 255 255 / 70%);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+    font-size: 25px;
+    font-family: serif;
+    font-weight: bold;
+}
+
+.right {
+    margin-right: 30px;
+}
+
+header a {
+    color: #090b15;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+    text-decoration-color: #090b15a6;
+}
+
+section {
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.bread {
+    background: #ffffff61;
+    width: 500px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+.bread img {
+    margin: auto;
+    margin-top: 10px;
+}
+
+section a {
+    color: #fff267;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section a:hover {
+    font-size: 40px;
+}
+
+section h1{
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+section p {
+    font-size: 20px;
+    padding: 15px;
+}
+
+@media screen and (min-width:1900px) {
+    body {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    header {
+        height: 140px;
+        font-size: 40px;
+    }
+    header img {
+        width: 60px;
+        height: 60px;
+    }
+    .right {
+        margin-right: 100px;
+    }
+    section{
+        padding-bottom: 150px;
+        margin-top: 100px;
+    }
+    section p {
+        font-size: 35px;
+    }
+    section img {
+        height: 800px;
+    }
+    .bread {
+        width: 1000px;
+        padding: 50px;
+    }
+    section a {
+        font-size: 60px;
+    }
+    section a:hover {
+        font-size: 70px;
+    }
+}
+
+@media screen and (min-width:1500px) {
+    header {
+        font-size: 35px;
+        height: 120px;
+    }
+    header img {
+        width: 40px;
+        height: 40px;
+    }
+    .right {
+        margin-right: 70px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    header {
+        font-size: 18px;
+        padding-top: 25px;
+        height: 80px;
+    }
+    header img {
+        width: 25px;
+        height: 25px;
+    }
+    .bread {
+        width: 360px;
+    }
+    section img {
+        height: 300px;
+    }
+    section a {
+        font-size: 25px;
+    }
+    section a:hover {
+        color: orange;
+        font-size: 25px;
+    }
+    section h1{
+        font-size: 35px;
+    }
+    section p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    header {
+        font-size: 15px;
+        padding-top: 18px;
+        height: 60px;
+    }
+    header img {
+        width: 20px;
+        height: 20px;
+    }
+    .bread {
+        width: 230px;
+    }
+    section h1{
+        font-size: 30px;
+    }
+    section p {
+        font-size: 15px;
+    }
+    section a:hover {
+        font-size: 25px;
+        color: orange;
+    }
+}
