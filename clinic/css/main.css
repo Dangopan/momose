@@ -1,0 +1,580 @@
+body {
+    background-color: #F4FBFE;
+    position: relative;
+}
+
+.wrap {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+header, footer {
+    background: #16afffa3;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+}
+
+.sample-sp {
+    color: red;
+    background: #fdff00;
+    border-radius: 10px;
+    width: 215px;
+    padding: 10px;
+    border: solid;
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.main {
+    color: white;
+    font-weight: bold;
+    height: 84%;
+    padding: 20px;
+}
+
+.main p {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.menu {
+    color: #4a4b50;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu a:hover {
+    color: #fff500;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    background: #00000145;
+    color: white;
+    padding: 0px;
+    margin: auto;
+    justify-content: center;
+}
+
+.menu li {
+    border: solid 2px white;
+    border-top: none;
+    border-bottom: none;
+}
+
+.left {
+    border-left: none !important;
+}
+
+.photo {
+    width: 300px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.time h1 {
+    margin-bottom: 0px;
+}
+
+.time p {
+    color: red;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.information {
+    margin: auto;
+    background: #87cefa59;
+    border-radius: 20px;
+    width: 300px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+section h1 {
+    color: #162390d1;
+    text-shadow: 4px 1px 3px #a4ebe6;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.information h2 {
+    background: linear-gradient(transparent 60%, #ffff0080 0%);
+    margin-bottom: 10px;
+    display: inline;
+    font-size: 15px;
+}
+
+.information p {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.symptomatology1 {
+    background-color: #ffbf01f7;
+    border-radius: 10px;
+    color: white;
+    width: 300px;
+    margin: auto;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.symptomatology img {
+    width: 200px;
+    height: 190px;
+    margin: auto;
+    background: #ffff003d;
+    border-radius: 50%;
+}
+
+.symptomatology-letter {
+    color: orange;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.pc-on {
+    display: none;
+}
+
+.advice {
+    font-size: 15px;
+    margin-bottom: 100px;
+}
+
+.point {
+    width: 300px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.point h3 {
+    background: #87cefa59;
+    border-radius: 5px;
+    border: solid 2px;
+    border-color: #8383ff;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.TEL {
+    width: 250px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.footer-menu {
+    color: #4a4b50;
+}
+
+.footer-menu a {
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.footer-menu a:hover {
+    color: #fff500;
+}
+
+footer ul {
+    display: flex;
+    text-align: center;
+    list-style: none;
+    margin: auto;
+    justify-content: center;
+    background: #00000145;
+    padding: 0px;
+    color: white;
+    padding: 5px;
+}
+
+footer li {
+    border-top: none;
+    border-bottom: none;
+}
+
+.footer {
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer-adress {
+    color: white;
+    padding: 10px;
+    background: #4A94BA;
+}
+
+.footer-c {
+    color: white;
+    padding: 10px;
+    font-size: 10px;
+}
+
+@media screen and (max-width:400px) {
+    .wrap {
+        max-width: 270px;
+    }
+    .sample-sp {
+        width: 250px;
+    }
+    header h1 {
+        font-size: 23px;
+    }
+    .main p {
+        font-size: 12px;
+        text-align: left;
+    }
+    .menu a {
+        font-size: 12px;
+    }
+    .photo {
+        width: 250px;
+        margin-bottom: 100px;
+    }
+    .information {
+        width: 250px;
+        margin-bottom: 100px;
+    }
+    section h1 {
+        font-size: 24px;
+    }
+    .information h2 {
+        font-size: 18PX;
+    }
+    .information P {
+        font-size: 12PX;
+    }
+    .symptomatology1 {
+        margin-bottom: 60px;
+        FONT-SIZE: 16PX;
+        width: 250px;
+    }
+    .symptomatology img {
+        width: 140px;
+        height: 130px;
+    }
+    .symptomatology-letter {
+        font-size: 18px;
+    }
+    .advice {
+        text-align: left;
+        font-size: 12px;
+        padding: 10px;
+    }
+    .point {
+        width: 250px;
+    }
+    .point h3 {
+        padding: 5px;
+        font-size: 15px;
+    }
+    .time p {
+        font-size: 12px;
+    }
+    .TEL {
+        width: 190px;
+    }
+    .footer-menu a {
+        padding: 10px;
+        font-size: 10px;
+    }
+    .footer-adress {
+        font-size: 10px;
+    }
+    .footer-c {
+        padding: 10px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .wrap {
+        max-width: 750px;
+    }
+    .sample-sp {
+        width: 522px;
+        text-align: left;
+    }
+    header h1 {
+        font-size: 40px;
+    }
+    .main p {
+        font-size: 15px;
+    }
+    .menu a {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .photo {
+        width: 500px;
+        margin-bottom: 100px;
+    }
+    .information {
+        width: 500px;
+        margin-bottom: 100px;
+    }
+    section h1 {
+        font-size: 30px;
+    }
+    .information h2 {
+        font-size: 20PX;
+    }
+    .information P {
+        font-size: 15PX;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .symptomatology1 {
+        margin-bottom: 60px;
+        FONT-SIZE: 30PX;
+        width: 500px;
+    }
+    .symptomatology img {
+        width: 300px;
+        height: 285px;
+    }
+    .symptomatology-letter {
+        font-size: 25px;
+    }
+    .advice {
+        text-align: center;
+    }
+    .point {
+        width: 500px;
+    }
+    .time p {
+        font-size: 15px;
+        margin-bottom: 100px;
+    }
+    .footer-menu a {
+        padding: 40px;
+        font-size: 15px;
+    }
+    .footer-adress {
+        padding: 15px;
+    }
+    .footer-c {
+        padding: 15px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .wrap {
+        max-width: 1000px;
+    }
+    .menu a {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .menu li {
+        padding: 10px;
+    }
+    .photo {
+        width: 700px;
+        margin-bottom: 150px;
+    }
+    .information {
+        width: 700px;
+        margin-bottom: 150px;
+    }
+    .symptomatology {
+        display: flex;
+        justify-content: center;
+    }
+    .symptomatology1 {
+        margin-bottom: 100px;
+        width: 500px;
+    }
+    .symptomatology img {
+        width: 210px;
+        height: 200px;
+        margin: 15px;
+    }
+    .symptomatology-letter {
+        display: none;
+    }
+    .pc-on {
+        font-size: 25px;
+        display: block;
+        display: flex;
+        color: orange;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .pc-on p {
+        padding-left: 105px;
+        font-size: 30px;
+    }
+    .advice {
+        font-size: 18px;
+        padding-top: 30px;
+    }
+    .point {
+        width: 700px;
+    }
+    .time p {
+        font-size: 18px;
+        margin-bottom: 150px;
+    }
+    .time img {
+        margin: auto;
+    }
+    .TEL {
+        margin: auto;
+        margin-bottom: 100px;
+        width: 400px;
+    }
+    .footer-menu a {
+        padding: 80px;
+        font-size: 18px;
+    }
+    .footer-adress {
+        padding: 20px;
+        font-size: 15px;
+    }
+    .footer-c {
+        padding: 20px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:2000px) {
+    .wrap {
+        max-width: 1500px;
+    }
+    header h1 {
+        font-size: 60px;
+        padding-top: 20px;
+    }
+    .main p {
+        font-size: 25px;
+        padding-top: 15px;
+    }
+    .menu a {
+        padding-left: 150px;
+        padding-right: 150px;
+        font-size: 30px;
+    }
+    .menu li {
+        padding: 30px;
+    }
+    .sample-sp {
+        width: 1000px;
+        text-align: center;
+        padding: 30px;
+        font-size: 30px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .photo {
+        width: 1000px;
+    }
+    section h1 {
+        font-size: 50px;
+    }
+    .information {
+        width: 1000px;
+        margin-bottom: 150px;
+        padding: 50px;
+    }
+    .information h2 {
+        font-size: 40px;
+    }
+    .information p {
+        font-size: 30PX;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .symptomatology {
+        display: flex;
+        justify-content: center;
+    }
+    .symptomatology1 {
+        width: 1000px;
+        padding: 40px;
+        font-size: 50px;
+    }
+    .symptomatology img {
+        width: 315px;
+        height: 320px;
+    }
+    .symptomatology-letter {
+        display: none;
+    }
+    .pc-on {
+        font-size: 25px;
+        display: block;
+        display: flex;
+        color: orange;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .pc-on p {
+        padding-right: 28px;
+        font-size: 50px;
+    }
+    .advice {
+        font-size: 30px;
+        margin-bottom: 150px;
+    }
+    .point {
+        width: 1000px;
+        margin-bottom: 150px;
+    }
+    .point h3 {
+        margin-bottom: 50px;
+        padding: 37px;
+        font-size: 40px;
+    }
+    .time p {
+        font-size: 35px;
+        margin-bottom: 150px;
+    }
+    .time img {
+        width: 100%;
+    }
+    .TEL {
+        margin-bottom: 150px;
+        width: 600px;
+    }
+    footer ul {
+        padding: 30px;
+    }
+    .footer-menu a {
+        padding: 150px;
+        font-size: 25px;
+    }
+    .footer-adress {
+        font-size: 25px;
+    }
+    .footer-c {
+        font-size: 20px;
+    }
+}

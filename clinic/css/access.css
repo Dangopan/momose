@@ -1,0 +1,401 @@
+body {
+    background-color: #F4FBFE;
+    position: relative;
+}
+
+.wrap {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+header, footer {
+    background: #16afffa3;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+}
+
+.sample-sp {
+    color: red;
+    background: #fdff00;
+    border-radius: 10px;
+    width: 215px;
+    padding: 10px;
+    border: solid;
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.main {
+    color: white;
+    font-weight: bold;
+    height: 84%;
+    padding: 20px;
+}
+
+.main p {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.menu {
+    color: #4a4b50;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu a:hover {
+    color: #fff500;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    background: #00000145;
+    color: white;
+    padding: 0px;
+    margin: auto;
+    justify-content: center;
+}
+
+.menu li {
+    border: solid 2px white;
+    border-top: none;
+    border-bottom: none;
+}
+
+.left {
+    border-left: none !important;
+}
+
+section h1 {
+    text-align: center;
+    background: #5ab5cd87;
+    font-weight: 100;
+    margin-bottom: 35px;
+    padding: 15px;
+    border-radius: 10px;
+    text-shadow: 2px 1px 2px white;
+}
+
+section p {
+    margin-bottom: 100px;
+}
+
+iframe {
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+.iframe2 {
+    display: none;
+}
+
+.information img {
+    margin-bottom: 35px;
+}
+
+table {
+    margin-bottom: 100px;
+    text-align: left;
+    line-height: 30px;
+}
+
+.table {
+    display: none;
+}
+
+th {
+    padding-right: 7px;
+}
+
+.time img {
+    margin-bottom: 15px;
+}
+
+.time p {
+    color: red;
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer-menu {
+    color: #4a4b50;
+}
+
+.footer-menu a {
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.footer-menu a:hover {
+    color: #fff500;
+}
+
+footer ul {
+    display: flex;
+    text-align: center;
+    list-style: none;
+    margin: auto;
+    justify-content: center;
+    background: #00000145;
+    padding: 0px;
+    color: white;
+    padding: 5px;
+}
+
+footer li {
+    border-top: none;
+    border-bottom: none;
+}
+
+.footer {
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer-adress {
+    color: white;
+    padding: 10px;
+    background: #4A94BA;
+}
+
+.footer-c {
+    color: white;
+    padding: 10px;
+    font-size: 10px;
+}
+
+@media screen and (max-width:400px) {
+    .wrap {
+        max-width: 200px;
+    }
+    .sample-sp {
+        width: 200px;
+    }
+    header h1 {
+        font-size: 23px;
+    }
+    .main p {
+        font-size: 12px;
+        text-align: left;
+    }
+    .menu a {
+        font-size: 12px;
+    }
+    section h1 {
+        width: 200px;
+        margin: auto;
+        padding: 10px;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    section p {
+        font-size: 15px;
+    }
+    iframe {
+        width: 200px;
+    }
+    table {
+        display: none;
+    }
+    .table {
+        display: block;
+        font-size: 15px;
+        line-height: 35px;
+    }
+    .table span {
+        font-weight: bold;
+        padding: 7px;
+        border-radius: 8px;
+        text-decoration: underline #ffeb3bd1;
+        background: linear-gradient(transparent 60%, #ffff00eb 0%);
+    }
+    .footer-menu a {
+        padding: 10px;
+        font-size: 10px;
+    }
+    .footer-adress {
+        font-size: 10px;
+    }
+    .footer-c {
+        padding: 10px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .wrap {
+        max-width: 500px;
+    }
+    .sample-sp {
+        width: 300px;
+        text-align: left;
+    }
+    header h1 {
+        font-size: 40px;
+    }
+    .main p {
+        font-size: 15px;
+    }
+    .menu a {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    section h1 {
+        width: 500px;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    section p {
+        text-align: center;
+        margin-top: 20px;
+    }
+    iframe {
+        width: 500px;
+        margin: auto;
+    }
+    table {
+        margin: auto;
+        margin-bottom: 100px;
+    }
+    .time p {
+        font-size: 15px;
+    }
+    .footer-menu a {
+        padding: 40px;
+        font-size: 15px;
+    }
+    .footer-adress {
+        padding: 15px;
+    }
+    .footer-c {
+        padding: 15px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .wrap {
+        max-width: 1000px;
+    }
+    .menu a {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .menu li {
+        padding: 10px;
+    }
+    .iframe {
+        display: none;
+    }
+    .iframe2 {
+        display: block;
+    }
+    .information img {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .time img {
+        margin: auto;
+    }
+    .time p {
+        margin-bottom: 150px;
+    }
+    .footer-menu a {
+        padding: 80px;
+        font-size: 18px;
+    }
+    .footer-adress {
+        padding: 20px;
+        font-size: 15px;
+    }
+    .footer-c {
+        padding: 20px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:2000px) {
+    .wrap {
+        max-width: 1500px;
+    }
+    header h1 {
+        font-size: 60px;
+        padding-top: 20px;
+    }
+    .main p {
+        font-size: 25px;
+        padding-top: 15px;
+    }
+    .menu a {
+        padding-left: 150px;
+        padding-right: 150px;
+        font-size: 30px;
+    }
+    .menu li {
+        padding: 30px;
+    }
+    .sample-sp {
+        width: 1000px;
+        text-align: center;
+        padding: 30px;
+        font-size: 30px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    section h1 {
+        width: 800px;
+        padding: 30px;
+        font-size: 40px;
+        margin-bottom: 100px;
+    }
+    section p {
+        margin-top: 50px;
+        font-size: 30px;
+        margin-bottom: 150px;
+    }
+    iframe {
+        width: 800px;
+    }
+    .information img {
+        width: 800px;
+    }
+    table {
+        font-size: 30px;
+        line-height: 60px;
+        margin-bottom: 150px;
+    }
+    .time img {
+        width: 80%;
+    }
+    .time p {
+        font-size: 30px;
+        margin-bottom: 300px;
+    }
+    .footer-menu a {
+        padding: 150px;
+        font-size: 25px;
+    }
+    .footer-adress {
+        font-size: 25px;
+    }
+    .footer-c {
+        font-size: 20px;
+    }
+}

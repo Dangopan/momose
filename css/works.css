@@ -37,7 +37,21 @@ section {
     padding-bottom: 100px;
 }
 
-.bread {
+.bread{
+    background: #ffffff61;
+    width: 500px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 30px;
+    margin-bottom: 100px;
+}
+
+.bread img {
+    margin: auto;
+    margin-top: 10px;
+}
+.clinic{
     background: #ffffff61;
     width: 500px;
     border-radius: 20px;
@@ -45,12 +59,10 @@ section {
     margin-top: 50px;
     padding: 30px;
 }
-
-.bread img {
+.clinic img{
     margin: auto;
     margin-top: 10px;
 }
-
 section a {
     color: #fff267;
     font-size: 30px;
@@ -101,6 +113,11 @@ section p {
     .bread {
         width: 1000px;
         padding: 50px;
+        margin-bottom: 200px;
+    }
+    .clinic {
+        width: 1000px;
+        padding: 50px;
     }
     section a {
         font-size: 60px;
@@ -137,6 +154,9 @@ section p {
     .bread {
         width: 360px;
     }
+    .clinic {
+        width: 360px;
+    }
     section img {
         height: 300px;
     }
@@ -166,6 +186,10 @@ section p {
         height: 20px;
     }
     .bread {
+        width: 230px;
+        margin-bottom: 0px;
+    }
+    .clinic{
         width: 230px;
     }
     section h1{

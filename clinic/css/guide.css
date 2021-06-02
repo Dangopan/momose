@@ -1,0 +1,430 @@
+body {
+    background-color: #F4FBFE;
+    position: relative;
+}
+
+.wrap {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+header, footer {
+    background: #16afffa3;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+}
+
+.sample-sp {
+    color: red;
+    background: #fdff00;
+    border-radius: 10px;
+    width: 215px;
+    padding: 10px;
+    border: solid;
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.main {
+    color: white;
+    font-weight: bold;
+    height: 84%;
+    padding: 20px;
+}
+
+.main p {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.menu {
+    color: #4a4b50;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu a:hover {
+    color: #fff500;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    background: #00000145;
+    color: white;
+    padding: 0px;
+    margin: auto;
+    justify-content: center;
+}
+
+.menu li {
+    border: solid 2px white;
+    border-top: none;
+    border-bottom: none;
+}
+
+.left {
+    border-left: none !important;
+}
+
+section h1 {
+    text-align: center;
+    background: #ffeb3b59;
+    padding: 5px;
+    font-weight: 100;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+
+.subject p {
+    text-align: center;
+}
+
+.first h2 {
+    font-size: 20px;
+    background: linear-gradient(transparent 60%, #ff000030 0%);
+    display: inline;
+    font-weight: 100;
+}
+
+.first p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.first span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.font {
+    font-size: 14px;
+}
+
+.appointment ul {
+    padding: 0px;
+}
+
+.appointment li {
+    list-style: none;
+    background: #3be9ff63;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    width: 360px;
+    border: solid #0060ff57;
+    color: darkblue;
+}
+
+.cooperation p {
+    text-align: center;
+    margin-bottom: 200px;
+    line-height: 30px;
+}
+
+.footer-menu {
+    color: #4a4b50;
+}
+
+.footer-menu a {
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.footer-menu a:hover {
+    color: #fff500;
+}
+
+footer ul {
+    display: flex;
+    text-align: center;
+    list-style: none;
+    margin: auto;
+    justify-content: center;
+    background: #00000145;
+    padding: 0px;
+    color: white;
+    padding: 5px;
+}
+
+footer li {
+    border-top: none;
+    border-bottom: none;
+}
+
+.footer {
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer-adress {
+    color: white;
+    padding: 10px;
+    background: #4A94BA;
+}
+
+.footer-c {
+    color: white;
+    padding: 10px;
+    font-size: 10px;
+}
+
+@media screen and (max-width:400px) {
+    .wrap {
+        max-width: 250px;
+    }
+    .sample-sp {
+        width: 250px;
+    }
+    header h1 {
+        font-size: 23px;
+    }
+    .main p {
+        font-size: 12px;
+        text-align: left;
+    }
+    .menu a {
+        font-size: 12px;
+    }
+    section h1 {
+        font-size: 15px;
+    }
+    section p {
+        font-size: 12px;
+    }
+    .first h2 {
+        font-size: 13px;
+    }
+    .first p {
+        font-size: 12px;
+    }
+    .first span {
+        font-size: 13px;
+    }
+    .appointment li {
+        width: 200px;
+        margin: auto;
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+    .footer-menu a {
+        padding: 10px;
+        font-size: 10px;
+    }
+    .footer-adress {
+        font-size: 10px;
+    }
+    .footer-c {
+        padding: 10px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .wrap {
+        max-width: 750px;
+    }
+    .sample-sp {
+        width: 522px;
+        text-align: left;
+    }
+    header h1 {
+        font-size: 40px;
+    }
+    .main p {
+        font-size: 15px;
+    }
+    .menu a {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    section h1 {
+        width: 500px;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .policy p {
+        margin: auto;
+        width: 500px;
+    }
+    .first {
+        width: 500px;
+        margin: auto;
+    }
+    .font {
+        font-size: 16px;
+    }
+    .appointment {
+        width: 500px;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 150px;
+    }
+    .appointment li {
+        width: 100%;
+    }
+    .footer-menu a {
+        padding: 40px;
+        font-size: 15px;
+    }
+    .footer-adress {
+        padding: 15px;
+    }
+    .footer-c {
+        padding: 15px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .wrap {
+        max-width: 1000px;
+    }
+    .menu a {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .menu li {
+        padding: 10px;
+    }
+    section h1 {
+        width: 600px;
+        font-size: 30px;
+        margin-top: 150px;
+    }
+    section p {
+        font-size: 20px;
+    }
+    .first {
+        width: 600px;
+    }
+    .first p {
+        line-height: 35px;
+    }
+    .font {
+        font-size: 20px;
+    }
+    .appointment {
+        width: 600px;
+    }
+    .appointment li {
+        width: 606px;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .policy p {
+        width: 600px;
+        font-size: 20px;
+    }
+    .footer-menu a {
+        padding: 80px;
+        font-size: 18px;
+    }
+    .footer-adress {
+        padding: 20px;
+        font-size: 15px;
+    }
+    .footer-c {
+        padding: 20px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:2000px) {
+    .wrap {
+        max-width: 1500px;
+    }
+    header h1 {
+        font-size: 60px;
+        padding-top: 20px;
+    }
+    .main p {
+        font-size: 25px;
+        padding-top: 15px;
+    }
+    .menu a {
+        padding-left: 150px;
+        padding-right: 150px;
+        font-size: 30px;
+    }
+    .menu li {
+        padding: 30px;
+    }
+    .sample-sp {
+        width: 1000px;
+        text-align: center;
+        padding: 30px;
+        font-size: 30px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    section h1 {
+        width: 800px;
+        font-size: 40px;
+        margin-top: 200px;
+        padding: 15px;
+    }
+    section p {
+        font-size: 35px;
+    }
+    .first {
+        width: 800px;
+    }
+    .first p {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .first h2 {
+        font-size: 37px;
+    }
+    .first span {
+        font-size: 35px;
+    }
+    .appointment {
+        width: 800px;
+    }
+    .policy p {
+        width: 800px;
+        font-size: 35px;
+    }
+    .appointment ul{
+        margin-top: 100px;
+    }
+    .appointment li {
+        width: 800px;
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+    .cooperation p {
+        margin-bottom: 250px;
+        line-height: 50px;
+    }
+    .footer-menu a {
+        padding: 150px;
+        font-size: 25px;
+    }
+    .footer-adress {
+        font-size: 25px;
+    }
+    .footer-c {
+        font-size: 20px;
+    }
+}

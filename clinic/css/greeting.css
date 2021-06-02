@@ -1,0 +1,445 @@
+body {
+    background-color: #F4FBFE;
+    position: relative;
+}
+
+.wrap {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+header, footer {
+    background: #16afffa3;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+}
+
+.sample-sp {
+    color: red;
+    background: #fdff00;
+    border-radius: 10px;
+    width: 215px;
+    padding: 10px;
+    border: solid;
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.main {
+    color: white;
+    font-weight: bold;
+    height: 84%;
+    padding: 20px;
+}
+
+.main p {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.menu {
+    color: #4a4b50;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu a:hover {
+    color: #fff500;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    background: #00000145;
+    color: white;
+    padding: 0px;
+    margin: auto;
+    justify-content: center;
+}
+
+.menu li {
+    border: solid 2px white;
+    border-top: none;
+    border-bottom: none;
+}
+
+.left {
+    border-left: none !important;
+}
+
+.greeting h1 {
+    background: #dcdcdc61;
+    padding: 10px;
+    text-align: center;
+    border: solid 10px #0090ff8f;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    margin-bottom: 30px;
+    font-family: serif;
+}
+.greeting h2{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: serif;
+    font-size: 20px;
+}
+.greeting p {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.career h1 {
+    background: #dcdcdc61;
+    padding: 10px;
+    text-align: center;
+    border: solid 10px #0090ff8f;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    margin-bottom: 30px;
+    font-family: serif;
+}
+
+.career p {
+    line-height: 30px;
+    margin-bottom: 100px;
+}
+
+.qualification h1 {
+    background: #dcdcdc61;
+    padding: 10px;
+    text-align: center;
+    border: solid 10px #0090ff8f;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    margin-bottom: 30px;
+    font-family: serif;
+}
+
+.qualification p {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.conference {
+    margin-bottom: 100px !important;
+}
+
+.footer-menu {
+    color: #4a4b50;
+}
+
+.footer-menu a {
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.footer-menu a:hover {
+    color: #fff500;
+}
+
+footer ul {
+    display: flex;
+    text-align: center;
+    list-style: none;
+    margin: auto;
+    justify-content: center;
+    background: #00000145;
+    padding: 0px;
+    color: white;
+    padding: 5px;
+}
+
+footer li {
+    border-top: none;
+    border-bottom: none;
+}
+
+.footer {
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer-adress {
+    color: white;
+    padding: 10px;
+    background: #4A94BA;
+}
+
+.footer-c {
+    color: white;
+    padding: 10px;
+    font-size: 10px;
+}
+
+@media screen and (max-width:400px) {
+    .wrap {
+        max-width: 270px;
+    }
+    .sample-sp {
+        width: 250px;
+    }
+    header h1 {
+        font-size: 23px;
+    }
+    .main p {
+        font-size: 12px;
+        text-align: left;
+    }
+    .menu a {
+        font-size: 12px;
+    }
+    .greeting h1 {
+        width: 200px;
+        margin: auto;
+        margin-bottom: 30px;
+        font-size: 15px;
+    }
+    .greeting h2{
+        font-size: 18px;
+    }
+    .greeting img {
+        width: 200px;
+        margin: auto;
+    }
+    .greeting p{
+        width: 200px;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+    .career h1{
+        width: 200px;
+        margin: auto;
+        margin-bottom: 30px;
+        font-size: 15px;
+    }
+    .career p{
+        width: 200px;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 100px;
+        font-size: 12px;
+    }
+    .qualification h1{
+        width: 200px;
+        margin: auto;
+        margin-bottom: 30px;
+        font-size: 15px;
+    }
+    .qualification p{
+        width: 200px;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 100px;
+        font-size: 12px;
+        line-height: 25px;
+    }
+    .footer-menu a {
+        padding: 10px;
+        font-size: 10px;
+    }
+    .footer-adress {
+        font-size: 10px;
+    }
+    .footer-c {
+        padding: 10px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .wrap {
+        max-width: 400px;
+    }
+    .sample-sp {
+        width: 300px;
+        text-align: left;
+    }
+    header h1 {
+        font-size: 40px;
+    }
+    .main p {
+        font-size: 15px;
+    }
+    .menu a {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .footer-menu a {
+        padding: 40px;
+        font-size: 15px;
+    }
+    .footer-adress {
+        padding: 15px;
+    }
+    .footer-c {
+        padding: 15px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .wrap {
+        max-width: 800px;
+    }
+    .sample-sp {
+        width: 530px;
+    }
+    .menu a {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .menu li {
+        padding: 10px;
+    }
+    .greeting h1 {
+        width: 500px;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .greeting h2{
+        font-size:25px;
+    }
+    .greeting p {
+        width: 640px;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+    .greeting img {
+        margin: auto;
+    }
+    .career h1 {
+        width: 500px;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .career p {
+        width: 500px;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+    .qualification h1 {
+        width: 500px;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .qualification p {
+        width: 500px;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+    .footer-menu a {
+        padding: 80px;
+        font-size: 18px;
+    }
+    .footer-adress {
+        padding: 20px;
+        font-size: 15px;
+    }
+    .footer-c {
+        padding: 20px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:2000px) {
+    .wrap {
+        max-width: 1500px;
+    }
+    header h1 {
+        font-size: 60px;
+        padding-top: 20px;
+    }
+    .main p {
+        font-size: 25px;
+        padding-top: 15px;
+    }
+    .menu a {
+        padding-left: 150px;
+        padding-right: 150px;
+        font-size: 30px;
+    }
+    .menu li {
+        padding: 30px;
+    }
+    section {
+        margin-bottom: 200px !important;
+    }
+    .sample-sp {
+        width: 1000px;
+        text-align: center;
+        padding: 30px;
+        font-size: 30px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .greeting h1 {
+        font-size: 40px;
+        padding: 30px;
+    }
+    .greeting h2{
+        font-size: 35px;
+    }
+    .greeting img {
+        width: 800px;
+        margin-bottom: 50px;
+    }
+    .greeting p {
+        width: 800px;
+        margin-bottom: 150px;
+        font-size: 30px;
+        line-height: 60px;
+    }
+    .career h1 {
+        font-size: 40px;
+        padding: 30px;
+    }
+    .career p {
+        margin-bottom: 150px;
+        font-size: 30px;
+        line-height: 60px;
+    }
+    .qualification h1 {
+        font-size: 40px;
+        padding: 30px;
+    }
+    .qualification p {
+        margin-bottom: 150px;
+        font-size: 30px;
+        line-height: 60px;
+    }
+    footer ul {
+        padding: 30px;
+    }
+    .footer-menu a {
+        padding: 150px;
+        font-size: 25px;
+    }
+    .footer-adress {
+        font-size: 25px;
+    }
+    .footer-c {
+        font-size: 20px;
+    }
+}
