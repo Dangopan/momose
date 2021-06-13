@@ -25,7 +25,7 @@
     </header>
     <section>
         <div class="star-box">
-            <div class="star"></div>
+            <div class="star" id="star"></div>
         </div>
         <div class="preface">
             <p class="typ">新しい何かを生み出すということ<br>
@@ -34,6 +34,59 @@
                 だけどもっと嬉しいのは、それで誰かが笑顔になったとき<br>
                 私は、作り続けることをやめない</p>
         </div>
+        <script>
+            $('.star,.star-box').each(function (インデックス, エレメント) {
+
+                $('.star,.star-box').each(function () {
+
+                    const element = document.querySelector(".star,.star-box");
+                    $(function () {
+                        setTimeout(function () {
+
+                            setInterval(function () {
+                                element.animate(
+                                    {
+                                        transform: [
+                                            "translateX(800px) rotateZ(45deg)", // 開始値
+                                            "translateX(0px) translateY(400px) rotateZ(45deg)" // 終了値
+                                        ]
+                                    },
+                                    {
+                                        duration: 3000, // ミリ秒指定
+                                        iterations: 100, // 繰り返し回数
+                                        direction: "normal", // 繰り返し挙動
+                                        easing: "ease" // 加減速種類
+                                    }
+                                );
+
+                            }, 3000);
+                            $(function () {
+
+                                $('.star,.star-box').hide().fadeIn();
+                                setTimeout(function () {
+                                    $('.star').fadeOut();
+                                }, 6500);
+
+                            });
+                            $(function () {
+
+                                $('.star,.star-box')
+                                setTimeout(function () {
+                                    $('.star').fadeIn();
+                                }, 6500);
+
+                            });
+
+                        });
+                    });
+                });
+
+
+
+            });
+
+
+        </script>
         <div class="menu">
             <div class="circle"><a href="about.html" target="_blank" rel="noopener">about</a>
                 <p>momoseと申します。<br>趣味は、コーディングとゲーム制作と絵を描くことです。</p>

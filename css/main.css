@@ -129,12 +129,14 @@ section a:hover {
     width: 3px;
     background: linear-gradient(transparent, rgb(255, 255, 255));
     animation-name: shooting;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-timing-function: linear;
-    animation-iteration-count:infinite;
+    animation-iteration-count:10;
+    animation-delay: 5s;
     position: relative;
-    top:60px;
-    left: 200px;
+    
+    /* top:60px;
+    left: 200px; */
 }
 .typ{
     position: relative;
