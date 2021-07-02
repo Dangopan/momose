@@ -40,6 +40,7 @@ header a:hover {
 
 .typ {
     opacity: 0;
+    margin-bottom:100px;
 }
 
 .typ span {
@@ -116,15 +117,15 @@ section a:hover {
     margin-bottom: 60px;
 }
 
-.star-box {
+/* .star-box {
     height: 200px;
     width: 200px;
     transform: rotateZ(45deg);
     position: relative;
     left: 130px;
-}
+} */
 
-.star {
+/* .star {
     height: 0;
     width: 3px;
     background: linear-gradient(transparent, rgb(255, 255, 255));
@@ -134,12 +135,12 @@ section a:hover {
     animation-iteration-count:10;
     animation-delay: 5s;
     position: relative;
-    
+     */
     /* top:60px;
     left: 200px; */
 }
 .typ{
-    position: relative;
+    /* position: relative; */
     top: -200px;
 }
 @keyframes shooting {
@@ -342,10 +343,10 @@ section a:hover {
     .readmore {
         font-size: 18px;
     }
-    .star-box{
+    /* .star-box{
         left:0px
     }
     .star{
         width: 1px;
-    }
+    } */
 }
