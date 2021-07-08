@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>momose's cooking/ スープ</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/soup.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/recipe.png" alt="">
+    </header>
+    <div class="kensaku">
+        <label><input id="search-word-input" maxlength="10" type="text" placeholder="サイト内検索"> 🔍</label>
+        <div id="prefecture-list">
+            <button data-name="お菓子" data-phonetic="おかし"><a href="sweets.html">お菓子</a></button>
+            <button data-name="デザート" data-phonetic="でざーと"><a href="sweets.html">デザート</a></button>
+            <button data-name="バナナ" data-phonetic="ばなな"><a href="bananacake.html">バナナケーキ</a></button>
+            <button data-name="ケーキ" data-phonetic="けーき"><a href="bananacake.html">バナナケーキ</a></button>
+            <button data-name="ガトーショコラ" data-phonetic="がとーしょこら"><a href="gateau-chocolat.html">ガトーショコラ</a></button>
+            <button data-name="オクラ" data-phonetic="おくら"><a href="udon.html">おくらと納豆のぶっかけうどん</a></button>
+            <button data-name="納豆" data-phonetic="なっとう"><a href="udon.html">おくらと納豆のぶっかけうどん</a></button>
+            <button data-name="麺" data-phonetic="めん"><a href="noodle.html">麺</a></button>
+            <button data-name="ご飯" data-phonetic="ごはん"><a href="rice.html">ご飯もの</a></button>
+            <button data-name="うどん" data-phonetic="うどん"><a href="udon.html">うどん</a></button>
+            <button data-name="オムライス" data-phonetic="おむらいす"><a href="egg-rice.html">オムライス</a></button>
+            <button data-name="肉" data-phonetic="にく"><a href="meat.html">肉</a></button>
+            <button data-name="ハンバーグ" data-phonetic="はんばーぐ"><a href="steak.html">ハンバーグ</a></button>
+            <button data-name="魚" data-phonetic="さかな"><a href="fish.html">魚</a></button>
+            <button data-name="鮭" data-phonetic="さけ"><a href="salmon.html">鮭</a></button>
+            <button data-name="サラダ" data-phonetic="さらだ"><a href="salad.html">サラダ</a></button>
+            <button data-name="マカロニ" data-phonetic="まかろに"><a href="macaroni.html">マカロニサラダ</a></button>
+            <button data-name="スープ" data-phonetic="すーぷ"><a href="soup.html">スープ</a></button>
+            <button data-name="パン" data-phonetic="ぱん"><a href="bread.html">パン</a></button>
+            <button data-name="フレンチトースト" data-phonetic="ふれんちとーすと"><a href="toast.html">フレンチトースト</a></button>
+            <button data-name="弁当" data-phonetic="べんとう"><a href="lunchbox.html">お弁当</a></button>
+            <button data-name="鶏肉" data-phonetic="とりにく"><a href="tomato-soup.html">鶏もも肉のトマトケチャップ煮込み</a></button>
+        </div>
+    </div>
+    <section class="wrap">
+
+        <div class="soup">
+            <img src="img/soup.png" alt="" width="100px">
+            <h1>スープ</h1>
+        </div>
+
+        <div class="menu">
+            <div class="tomatosoup">
+                <img src="img/tomato soup.jpg" alt="">
+                <a href="tomato-soup.html">鶏もも肉のトマトケチャップ煮込み</a> 
+            </div>
+        </div>
+
+        <div id="page-top"><a href="#"></a></div>
+        <script>
+            $(function () {
+                var topBtn = $('#page-top');
+                topBtn.hide();
+
+                $(window).scroll(function () {
+                    var w = $(window).width();
+                    if ($(this).scrollTop() > 100) {
+                        topBtn.fadeIn();
+                    } else {
+                        topBtn.fadeOut();
+                    }
+                });
+
+                topBtn.click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 500);
+                    return false;
+                });
+            });
+        </script>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="recipe">
+                <a href="index.html">トップ</a><br>
+                <a href="toast.html">新着レシピ</a><br>
+                <a href="ranking.html">ランキング</a>
+            </div>
+            <div class="recipe2">
+                <span>レシピを探す</span><br>
+                <a href="category.html">カテゴリで探す</a><br>
+            </div>
+        </div>
+        <div class="pc-on2">
+            <a href="index.html" class="right">トップ</a><br>
+            <a href="toast.html" class="right">新着レシピ</a><br>
+            <a href="ranking.html" class="right">ランキング</a>
+            <div>
+                <span>レシピを探す</span><br>
+                <a href="category.html">カテゴリで探す</a><br>
+            </div>
+        </div>
+        <p>©momose's cooking site</p>
+    </footer>
+</body>
+
+</html>

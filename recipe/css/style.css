@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  table {
+    text-align: left;
+    border-collapse: collapse;
+  }
+  
+  table th {
+    font-weight: normal;
+  }
+  
+  h1,
+  h2 {
+    font-weight: normal;
+  }
+  
+  button {
+    display: block;
+  }
+  
+  label {
+    display: block;
+    text-align: center;
+  }
+  
+  button {
+    text-decoration: none;
+    color: black;
+    background-color:#e1f8f6;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    display: inline-block;
+    height:50px;
+    padding: 0 32px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-decoration: none;
+  }
+  button a{
+      text-decoration: none;
+  }
+  button a:hover {
+    color: darkblue;
+    font-weight: bold;
+  }
+  main {
+    box-sizing: border-box;
+    overflow-y: scroll;
+    text-align: center;
+    font-size: 22px;
+  }
+  .kensaku {
+    text-align: center;
+    margin-top: 10px;
+  }
+  header img{
+    padding-bottom: 15px;
+  }
+  header {
+    padding: 20px;
+    top: 0;
+    text-align: center;
+    color: white;
+    /* font-size: 22px; */
+  }
+  
+  #prefecture-list {
+    display: grid;
+    height: 100%;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 72px;
+    align-content: center;
+    padding-top:15px;
+    overflow-y: scroll;
+    text-align: center;
+  }
+  
+  #prefecture-list button.hide {
+    display: none;
+  }
+  
+  #prefecture-list li {
+    color: #fff;
+    background-color: #a3a611;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (max-width:685px){
+    #prefecture-list{
+        line-height: 70px;
+    }
+    input, button, textarea, select {
+        font: initial;
+    }
+  }
+  @media screen and (max-width:330px) {
+      button{
+          font-size: 12px !important;
+      }
+      label{
+        width: 245px;
+        margin: auto;
+      }
+  }
+  @media screen and (min-width:1300px){
+    input {
+      height: 40px;
+      width: 300px;
+  }
+}
+  

@@ -64,6 +64,19 @@ section {
     margin: auto;
     margin-top: 10px;
 }
+.recipe{
+    background: #ffffff61;
+    width: 500px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 30px;
+    margin-bottom: 100px;
+}
+.recipe img{
+    margin: auto;
+    margin-top: 10px;
+}
 section a {
     color: #fff267;
     font-size: 30px;
@@ -148,6 +161,13 @@ section p {
         width: 1000px;
         padding: 50px;
     }
+    .recipe {
+        width: 1000px;
+        padding: 50px;
+    }
+    .recipe img{
+        width: 660px;
+    }
     .card {
         width: 1000px;
         padding: 50px;
@@ -204,6 +224,12 @@ section p {
     .clinic {
         width: 360px;
     }
+    .recipe {
+        width: 360px;
+    }
+    .recipe img{
+        width:250px;
+    }
     .card{
         width: 360px;
     }
@@ -250,6 +276,9 @@ section p {
         margin-bottom: 0px;
     }
     .clinic{
+        width: 230px;
+    }
+    .recipe{
         width: 230px;
     }
     .card{
