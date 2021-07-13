@@ -136,7 +136,7 @@ section p {
     opacity: 1;
 }
 .demo{
-    transition: .7s ease-in-out ;
+    transition: .3s ease-in-out ;
 }
 .star {
     background-image: url(../img/star.png);
