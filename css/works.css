@@ -60,11 +60,11 @@ section {
     padding: 30px;
     margin-bottom: 100px;
 }
-.clinic img{
+.clinic img,.company img{
     margin: auto;
     margin-top: 10px;
 }
-.recipe{
+.recipe,.company{
     background: #ffffff61;
     width: 500px;
     border-radius: 20px;
@@ -191,7 +191,7 @@ section p {
         padding: 50px;
         margin-bottom: 200px;
     }
-    .clinic {
+    .clinic,.company {
         width: 1000px;
         padding: 50px;
     }
@@ -260,7 +260,7 @@ section p {
         width: 25px;
         height: 25px;
     }
-    .bread {
+    .bread,.company {
         width: 360px;
     }
     .clinic {
@@ -317,7 +317,7 @@ section p {
         width: 230px;
         margin-bottom: 0px;
     }
-    .clinic{
+    .clinic,.company{
         width: 230px;
     }
     .recipe{

@@ -1,0 +1,264 @@
+html{
+    max-width: none;
+}
+header{
+    display: flex;
+    color: white;
+}
+body{
+    background-color: #222 !important;
+}
+section{
+    margin: auto;
+    height: 500px;
+    background: white;
+}
+section h1{
+    text-align: center;
+    padding-top: 100px
+}
+.pc-on{
+    display: none;
+}
+.companyname{
+    margin: auto;
+}
+.companyname h2{
+    font-size: 20px;
+}
+#menu-btn-check:checked~.menu-btn span {
+    background-color: rgba(255, 255, 255, 0);
+}
+#menu-btn-check:checked~.menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked~.menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+.menu-btn {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+}
+.menu-btn span, .menu-btn span:before, .menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+#menu-btn-check {
+    display: none;
+}
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    right: 100%;
+    /*leftの値を変更してメニューを画面外へ*/
+    transition: all 0.5s;
+    /*アニメーション設定*/
+    background-color: #1611358c;
+}
+#menu-btn-check:checked~.menu-content {
+    right: 0;
+    /*メニューを画面内へ*/
+}
+.menu-content ul {
+    padding: 70px 10px 0;
+    margin-left: 30px;
+    list-style: none;
+}
+.menu-content ul li {
+    border-bottom: solid 1px #ffffff;
+}
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: #ffffff;
+    text-shadow: 6px 1px 10px #3f51b5;
+    text-decoration: none;
+    padding: 15px 15px 10px 0;
+    position: relative;
+}
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+.menu-content ul li a:hover {
+    color:#3f51b5;
+}
+#page-top{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 80px;
+    bottom: 60px;
+    background:black;
+    opacity: 0.6;
+    border-radius: 50%;
+  }
+#page-top a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+  }
+#page-top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f106';
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -10px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}
+.adress{
+    color: white;
+    padding: 27px;
+    width: 400px;
+}
+.adress h1{
+    font-size: 20px;
+}
+.adress p{
+    font-size: 15px;
+}
+@media screen and (max-width:420px){
+    .adress{
+        padding: 10px;
+        width: 275px;
+    }
+    #page-top{
+        right: 40px;
+        bottom: 250px;
+    }
+    section h1{
+        width: 275px;
+        margin: auto;
+        font-size: 25px
+    }
+}
+@media screen and (min-width:900px){
+    .adress{
+        padding: 43px;
+        width: 750px;
+    }
+}
+@media screen and (min-width:1500px){
+    .adress{
+        padding: 50px;
+        width: 1500px;
+    }
+    .adress h1{
+        font-size: 35px;
+    }
+    .adress p{
+        font-size:25px;
+        margin-top: 30px;
+    }
+    #page-top a{
+        width: 150px;
+        height: 150px;
+    }
+    #page-top{
+        bottom: 400px;
+        height:80px;
+        width:80px;
+    }
+    #page-top a::before {
+        right: 70px;
+        top: -100px;
+        font-size: 40px;
+    }
+    header{
+        height:110px;
+    }
+    .companyname h2{
+        font-size: 40px;
+    }
+    .pc-on a{
+        font-size: 30px;
+        margin-top: 40px;
+    }
+}
+@media screen and (min-width:1200px){
+    .pc-on{
+        display: block;
+        padding:20px 0px;
+    }
+    .pc-on a {
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        text-decoration: none;
+        font-size: 25px;
+        text-decoration: none;
+        margin-right: 40px;
+    }  
+    .pc-on a:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+        transform: translate(-100%, 0);
+        transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+        content: "";
+    } 
+    .pc-on a:hover{
+        color: #fff;
+    }
+    .pc-on a:hover:after {
+        transform: translate(0, 0);
+    } 
+    .pc-on ul{
+        list-style: none;
+        display: flex;
+    }
+    .hamburger-menu{
+        display: none;
+    }
+    .companyname{
+        margin-left: 60px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .companyname h2{
+        font-size: 25px;
+    }
+}

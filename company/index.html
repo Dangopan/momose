@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百瀬web制作会社 ホーム</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <!--recet.css-->
+    <link rel="stylesheet" href="css/index.css">
+    <!--index.css-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+    <!--ページトップ-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--jquery-->
+    <script src="fadein.js"></script>
+    <!--jquery fadein-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <!--bootstrap ハンバーガーメニュー-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!--bootstrap ハンバーガーメニュー-->
+</head>
+
+<body>
+    <header>
+        <div class="hamburger-menu">
+            <input type="checkbox" id="menu-btn-check">
+            <label for="menu-btn-check" class="menu-btn"><span></span></label>
+            <div class="menu-content">
+                <ul>
+                    <li>
+                        <a href="index.html[">ホーム</a>
+                    </li>
+                    <li>
+                        <a href="policy.html">企業理念</a>
+                    </li>
+                    <li>
+                        <a href="company.html">会社概要</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">お問い合わせ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="companyname">
+            <h2>百瀬web制作会社</h2>
+        </div>
+        <div class="pc-on">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="policy.html">企業理念</a></li>
+                <li><a href="company.html">会社概要</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="main">
+            <div class="typ"><span id="typewriter"></span></div>
+            <script>
+                const typewriter = (param) => {
+
+                    let el = document.querySelector(param.el);
+                    let speed = param.speed;
+                    let string = param.string.split("");
+                    string.forEach((char, index) => {
+                        setTimeout(() => {
+                            el.textContent += char;
+                        }, speed * index);
+                    });
+                };
+                typewriter({
+                    el: "#typewriter", //要素
+                    string: "web制作のことなら、お任せください！", //文字列
+                    speed: 100 //速度
+                });
+            </script>
+        </div>
+        <div class="aboutus">
+            <h1>百瀬web制作会社について</h1>
+            <p>大阪府〇〇市にあるweb制作会社です。<br>
+                お客様のご要望、特徴にあったホームページ作りを行い、その後の戦略的な運用までサポートいたします。<br>主にコーポレートサイト、ランディングページを手掛けております。また、デザイン制作にも力を入れている会社です。<br>WEB制作のことなら、なんでもご相談ください。
+            </p>
+        </div>
+        <div class="service">
+            <img src="img/service.jpg" alt="" class="photo">
+            <h2>service</h2>
+            <div class="flex">
+                <img src="img/pc.png" alt="" class="icon">
+                <div class="box fadein">
+                    <h3>ホームページ制作</h3>
+                    <p>ヒアリングを通して、お客様のご要望、特徴に合ったホームページ作りを行います。</p>
+                </div>
+            </div>
+            <div class="flex">
+                <img src="img/paint.png" alt="" class="icon">
+                <div class="box fadein">
+                    <h3>デザイン</h3>
+                    <p>ロゴ、名刺やチラシ、パンフレッドなどあらゆるデザイン制作をご提案いたします。</p>
+                </div>
+            </div>
+            <div class="flex">
+                <img src="img/system.png" alt="" class="icon">
+                <div class="box fadein">
+                    <h3>システム開発</h3>
+                    <p>お客様の要件に合わせて最適な構築プランをご提案いたします。</p>
+                </div>
+            </div>
+            <div class="flex">
+                <img src="img/icon.png" alt="" class="icon">
+                <div class="box fadein">
+                    <h3>運用支援</h3>
+                    <p>制作後も、更新サポートやwebサイト運用をサポートいたします。</p>
+                </div>
+            </div>
+
+            <p class="readmore"><a href="policy.html">readmore</a></p>
+
+            <div id="page-top"><a href="#"></a></div>
+            <script>
+                $(function () {
+                    var topBtn = $('#page-top');
+                    topBtn.hide();
+
+                    $(window).scroll(function () {
+                        var w = $(window).width();
+                        if ($(this).scrollTop() > 100) {
+                            topBtn.fadeIn();
+                        } else {
+                            topBtn.fadeOut();
+                        }
+                    });
+
+                    topBtn.click(function () {
+                        $('body,html').animate({
+                            scrollTop: 0
+                        }, 500);
+                        return false;
+                    });
+                });
+            </script>
+    </section>
+    <footer>
+        <div class="adress">
+            <h1>百瀬web制作会社</h1>
+            <p>〒000‐0000<br>奈良県〇〇市〇〇町10‐1‐1<br>〇〇ビル2F</p>
+        </div>
+        <div class="contact bg">
+            <div class="title">
+                <span>CONTACT</span>
+                <span>お問い合わせはこちら</span>
+                <span>web制作に関することであれば、お気軽にご相談ください。</span>
+            </div>
+        </div>
+        <script>
+           
+                const CLASSNAME = "-visible";
+                const TIMEOUT = 2000;
+                const $target = $(".bg");
+
+                setInterval(() => {
+                    $target.addClass(CLASSNAME);
+                }, TIMEOUT * 1);
+        
+
+        </script>
+    </footer>
+
+</body>
+
+</html>

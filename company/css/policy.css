@@ -1,0 +1,489 @@
+html{
+    max-width: none;
+}
+header,footer{
+    display: flex;
+    color: white;
+    background-color: #222 !important;
+}
+body{
+    font-family: serif !important;
+}
+section{
+    margin: auto;
+}
+.pc-on{
+    display: none;
+}
+.companyname{
+    margin: auto;
+}
+.companyname h2{
+    font-size: 20px;
+}
+#menu-btn-check:checked~.menu-btn span {
+    background-color: rgba(255, 255, 255, 0);
+}
+#menu-btn-check:checked~.menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked~.menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+.menu-btn {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+}
+.menu-btn span, .menu-btn span:before, .menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+#menu-btn-check {
+    display: none;
+}
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    right: 100%;
+    /*leftの値を変更してメニューを画面外へ*/
+    transition: all 0.5s;
+    /*アニメーション設定*/
+    background-color: #1611358c;
+}
+#menu-btn-check:checked~.menu-content {
+    right: 0;
+    /*メニューを画面内へ*/
+}
+.menu-content ul {
+    padding: 70px 10px 0;
+    margin-left: 30px;
+    list-style: none;
+}
+.menu-content ul li {
+    border-bottom: solid 1px #ffffff;
+}
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: #ffffff;
+    text-shadow: 6px 1px 10px #3f51b5;
+    text-decoration: none;
+    padding: 15px 15px 10px 0;
+    position: relative;
+}
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+.menu-content ul li a:hover {
+    color:#3f51b5;
+}
+
+#page-top{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 80px;
+    bottom: 60px;
+    background:black;
+    opacity: 0.6;
+    border-radius: 50%;
+  }
+#page-top a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+  }
+#page-top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f106';
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -10px;
+    bottom: 0;
+    right:0;
+    margin: auto;
+    text-align: center;
+}
+.policy{
+    display: none;
+}
+.sp-on{
+    background: #f2f6f9;
+    padding-bottom: 50px;
+}
+.sp-on img{
+    margin: auto;
+    padding-top: 50px;
+}
+.sp-on h1{
+    text-align: center;
+    border-radius: 10px;
+    background: lightblue;
+    padding: 10px;
+    width: 275px;
+    margin: auto;
+}
+.sp-on p{
+    text-align: center;
+}
+.explanation span{
+    color: crimson;
+    font-size: 25px;
+}
+.move{
+    margin-top: 50px;
+    background:lightblue;
+    padding: 10px;
+    border-radius: 10px;
+    width: 275px;
+    margin: auto;
+}
+.move h2{
+    margin-bottom: 30px;
+    font-size: 25px;
+    text-align: center;
+}
+.move p{
+    text-align: start;
+    font-weight: 400;
+    font-size: 20px;
+}
+.explanation{
+    margin: 30px auto;
+}
+.title {
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-delay: 0s;
+    transition-timing-function: ease;
+}
+.active {
+    transform: translateX(400px);
+    visibility:hidden;
+}
+.service{
+    background:white;
+}
+.service h2{
+    font-size: 40px;
+    margin: 100px auto;
+    text-align: center;
+    border: solid 5px deepskyblue;
+    border-style: double;
+    color: deepskyblue;
+    padding: 10px;
+    width: 275px;
+}
+.service h3{
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    line-height: 40px;
+}
+.service p{
+    margin: auto;
+    margin-bottom: 50px;
+}
+.service ul,.service ol{
+    font-size: 20px;
+    line-height: 50px;
+}
+.service ol{
+    list-style: none;
+    text-align: center;
+    font-weight: bold;
+}
+.system{
+    border: solid 1px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.system p{
+    font-weight: bold;
+    color: crimson;
+    text-align: center;
+}
+/* アニメーション前のスタイル */
+.js-marker {
+    display: inline;
+    position: relative;
+    background-image: linear-gradient(90deg, #ffff66, #ffff66); /* 単色の場合は同じ色、グラデーションさせる場合は別々の色 */
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 0 30%; /* '30%'の部分にマーカーの太さを記入 */
+    transition: all 1s ease-in-out; /* マーカーを引く速度を調整 */
+    font-weight: bold; /* ついでに太字にしたい場合 */
+  }
+  
+  /* アニメーション発火時 */
+  .js-marker.inview {
+    background-size: 100% 30%; /* '30%'の部分は上で設定した太さに合わせる */
+  }
+.icon{
+    width: 100px;
+    margin: auto;
+    margin-top: 30px;
+}
+.flex h3{
+    position: relative;
+    padding-left: 25px;
+}  
+.flex h3:before {
+    position: absolute;
+    content: '';
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: none;
+    border-left: solid 15px transparent;
+    border-bottom: solid 15px rgb(119, 195, 223);
+}
+.flex h3:after {
+    position: absolute;
+    content: '';
+    bottom: -3px;
+    left: 10px;
+    width: 100%;
+    border-bottom: solid 3px rgb(119, 195, 223);
+}
+.box{
+    transition: .7s ease-in-out ;
+    text-align: start;
+    padding: 10px;
+}
+@keyframes blink {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+footer h1{
+    font-size: 25px;
+}
+footer p{
+    font-size: 18px;
+}
+.adress{
+    padding: 30px;
+}
+@media screen and (min-width:1500px){
+    #page-top{
+        bottom: 130px;
+        height:80px;
+        width:80px;
+    }
+    #page-top a::before {
+        font-size: 40px;
+    }
+    .pc-on a{
+        font-size: 30px;
+        margin-top: 40px;
+    }
+    .flex h3{
+        font-size: 35px;
+        padding-bottom: 15px;
+        margin-bottom: 100px;
+    }
+    .service{
+        max-width: 1000px;
+        margin:auto;
+    }
+    .service p{
+        font-size: 25px;
+        max-width: max-content;
+    }
+}
+@media screen and (min-width:1200px){
+    .pc-on{
+        display: block;
+    }
+    .pc-on a {
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        text-decoration: none;
+        font-size: 25px;
+        text-decoration: none;
+        margin-right: 40px;
+    }  
+    .pc-on a:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+        transform: translate(-100%, 0);
+        transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+        content: "";
+    } 
+    .pc-on a:hover{
+        color: #fff;
+    }
+    .pc-on a:hover:after {
+        transform: translate(0, 0);
+    } 
+    .pc-on ul{
+        list-style: none;
+        display: flex;
+        padding-top: 20px;
+    }
+    .hamburger-menu{
+        display: none;
+    }
+    .companyname{
+        margin-left: 60px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .companyname h2{
+        font-size: 25px;
+    }
+    
+    header,footer{
+        padding: 0px 70px;
+    }
+    #page-top{
+        right: 110px;
+        bottom: 210px;
+    }
+    .policy h1,.move{
+        width: 500px;
+    }
+    .title p{
+        text-align: center;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+}
+@media screen and (min-width:900px){
+    .sp-on{
+        display: none;
+    }
+    .policy{
+        display: block;
+        display: flex;
+        background: #f2f6f9;
+    }
+    .policy h1{
+        text-align: center;
+        border-radius: 10px;
+        background: lightblue;
+        padding: 10px;
+        width: 275px;
+        margin: auto;
+        font-size: 2rem;
+    }
+    .icon{
+        width: 200px !important;
+        margin: 0px;
+    }
+    .flex img{
+        margin-right: 100px;
+        height: 200px;
+    }
+    .flex{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+}
+@media screen and (max-width:1200px){
+    #page-top{
+        bottom: 220px;
+    }
+    #page-top a::before {
+        right:11px;
+    }
+}
+@media screen and (max-width:1000px){
+    .service{
+        max-width: 700px;
+        margin: auto;
+    }
+    .policy h1,.move{
+        width: 240px;
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:900px){
+    .service{
+        max-width:600px;
+        margin: auto;
+    }
+}
+@media screen and (max-width:670px){
+    .service{
+        max-width: 500px;
+        margin: auto;
+    }
+}
+@media screen and (max-width:600px){
+    .sp-on img{
+        padding-top: 0px;
+    }
+    .box{
+        max-width: 300px;
+        margin: auto;
+    }
+    .service ol{
+        padding:0px;
+    }
+    .sp-on h1{
+        width: 240px;
+    }
+}
+@media screen and (max-width:420px){
+    .service{
+        text-align: center;
+        max-width: 275px;
+        margin: auto;
+    }
+    .flex h3:after {
+        width: 90%;
+    }
+    .flex h3{
+        padding-left: 0px;
+    }
+}

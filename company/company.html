@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百瀬web制作会社 会社概要</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <!--recet.css-->
+    <link rel="stylesheet" href="css/company.css">
+    <!--index.css-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+    <!--ページトップ-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--jquery-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <!--bootstrap ハンバーガーメニュー-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!--bootstrap ハンバーガーメニュー-->
+</head>
+
+<body>
+    <header>
+        <div class="hamburger-menu">
+            <input type="checkbox" id="menu-btn-check">
+            <label for="menu-btn-check" class="menu-btn"><span></span></label>
+            <div class="menu-content">
+                <ul>
+                    <li>
+                        <a href="index.html[">ホーム</a>
+                    </li>
+                    <li>
+                        <a href="policy.html">企業理念</a>
+                    </li>
+                    <li>
+                        <a href="company.html">会社概要</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">お問い合わせ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="companyname">
+            <h2>百瀬web制作会社</h2>
+        </div>
+        <div class="pc-on">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="policy.html">企業理念</a></li>
+                <li><a href="company.html">会社概要</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <h1>※このページは制作中です</h1>
+        <div id="page-top"><a href="#"></a></div>
+            <script>
+                $(function () {
+                    var topBtn = $('#page-top');
+                    topBtn.hide();
+
+                    $(window).scroll(function () {
+                        var w = $(window).width();
+                        if ($(this).scrollTop() > 100) {
+                            topBtn.fadeIn();
+                        } else {
+                            topBtn.fadeOut();
+                        }
+                    });
+
+                    topBtn.click(function () {
+                        $('body,html').animate({
+                            scrollTop: 0
+                        }, 500);
+                        return false;
+                    });
+                });
+            </script>
+    </section>
+    <footer>
+        <div class="adress">
+            <h1>百瀬web制作会社</h1>
+            <p>〒000‐0000<br>奈良県〇〇市〇〇町10‐1‐1<br>〇〇ビル2F</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,629 @@
+html{
+    max-width: none;
+}
+header{
+    display: flex;
+    color: white;
+}
+body{
+    background-color: #222 !important;
+}
+section{
+    margin: auto;
+}
+.pc-on{
+    display: none;
+}
+.companyname{
+    margin: auto;
+}
+.companyname h2{
+    font-size: 20px;
+}
+#menu-btn-check:checked~.menu-btn span {
+    background-color: rgba(255, 255, 255, 0);
+}
+#menu-btn-check:checked~.menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked~.menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+.menu-btn {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+}
+.menu-btn span, .menu-btn span:before, .menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+#menu-btn-check {
+    display: none;
+}
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    right: 100%;
+    /*leftの値を変更してメニューを画面外へ*/
+    transition: all 0.5s;
+    /*アニメーション設定*/
+    background-color: #1611358c;
+}
+#menu-btn-check:checked~.menu-content {
+    right: 0;
+    /*メニューを画面内へ*/
+}
+.menu-content ul {
+    padding: 70px 10px 0;
+    margin-left: 30px;
+    list-style: none;
+}
+.menu-content ul li {
+    border-bottom: solid 1px #ffffff;
+}
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: #ffffff;
+    text-shadow: 6px 1px 10px #3f51b5;
+    text-decoration: none;
+    padding: 15px 15px 10px 0;
+    position: relative;
+}
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+.menu-content ul li a:hover {
+    color:#3f51b5;
+}
+.main{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    background-image: url(../img/pc.jpg);
+    height: 415px;
+}
+#typewriter::after {
+    content: "|";
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.typ{
+    padding-top: 90px;
+    max-width: 270px;
+    margin: auto;
+    color: #fff;
+    text-shadow: 2px -2px 4px black;
+    font-size: 50px;
+}
+.box{
+    transition: .7s ease-in-out ;
+}
+@keyframes blink {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.aboutus{
+    background-color: white;
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.aboutus p{
+    text-align: start;
+    max-width: 270px;
+    margin: auto;
+    margin-top: 30px;
+    line-height:30px;
+}
+.aboutus h1 {
+    position: relative;
+    padding: 10px;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    max-width: 340px;
+    margin: auto;
+    font-size: 20px !important;
+}
+.aboutus h1:before,.aboutus h1:after {
+    content: '';
+    position: absolute;
+    top: -7px;
+    width: 2px;
+    height: -webkit-calc(100% + 14px);
+    height: calc(100% + 14px);
+    background-color: black;
+}
+.aboutus h1:before {
+    left: 7px;
+}
+.aboutus h1:after {
+    right: 7px;
+}
+.service{
+    background-color: white;
+    padding-bottom: 50px;
+}
+.service h2{
+    font-size: 40px;
+    color: white;
+    position: relative;
+    top: -70px;
+    left: 30px;
+    width: 200px;
+    text-align: center;
+}
+.service h3{
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    line-height: 40px;
+}
+.service p{
+    max-width: 270px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.photo{
+    width: 100%;
+}
+.icon{
+    width: 100px;
+    margin: auto;
+    margin-top: 30px;
+}
+.flex h3{
+    position: relative;
+    padding-left: 25px;
+}  
+.flex h3:before {
+    position: absolute;
+    content: '';
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: none;
+    border-left: solid 15px transparent;
+    border-bottom: solid 15px rgb(119, 195, 223);
+}
+.flex h3:after {
+    position: absolute;
+    content: '';
+    bottom: -3px;
+    left: 10px;
+    width: 100%;
+    border-bottom: solid 3px rgb(119, 195, 223);
+}
+.readmore{
+    font-size: 25px;
+    border: solid;
+    text-align: center;
+    width: 100px;
+    margin-top: 30px;
+    border-color:rgb(119, 195, 223);
+    border-style: double;
+    width: 160px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.readmore a{
+    text-decoration: none;
+    color:rgb(119, 195, 223) ;
+}
+.readmore a:hover{
+    color:white;
+}
+.readmore:hover{
+    background-color:rgb(119, 195, 223) ;
+}
+#page-top{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 80px;
+    bottom: 60px;
+    background:black;
+    opacity: 0.6;
+    border-radius: 50%;
+  }
+#page-top a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+  }
+#page-top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f106';
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -10px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+.contact{
+    background: #212529;
+    color: white;
+    width: 300px;
+    padding: 15px;
+    float: right;
+}
+.contact h1{
+    font-size: 20px;
+}
+.contact h3{
+    font-size: 15px;
+}
+.adress{
+    color: white;
+    padding: 27px;
+    width: 400px;
+}
+.adress h1{
+    font-size: 20px;
+}
+.adress p{
+    font-size: 15px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.bg {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height:191px;
+  color: #fff;
+}
+
+.bg.-visible:before {
+  transform: translate(0, 0);
+}
+
+.bg:before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:191px;
+  background:linear-gradient(#7e46bdb8, #a1adac);
+  transform: translate(0, 100%);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) .6s;
+  content: '';
+}
+
+/* テキストのスタイル */
+.title {
+  display: block;
+  color: #fff;
+}
+
+.title span {
+  display: block;
+  opacity: 0;
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 1s, opacity linear 0.7s;
+}
+
+.title span:first-child {
+  transform: translate(0, 40px);
+  font-size:25px;
+  transition-delay: 0.25s;
+}
+.title span:last-child {
+  transform: translate(0, 30px);
+  font-size:15px;
+  transition-delay: 0.45s;
+}
+.title span:nth-child(2n){
+    margin-bottom: 15px;
+}
+.bg.-visible .title span {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+@media screen and (max-width:420px){
+    .service h3{
+        width: 260px;
+    }
+    .flex h3:after {
+        width: 250px;
+    }
+    .service{
+        text-align: center;
+    }
+    .service h2{
+        left: 0px;
+        padding-left: 60px;
+    }
+    .aboutus{
+        padding: 31px;
+    }
+    .main{
+        height: 180px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px !important;
+    }
+    .typ{
+        padding: 17px;
+        padding-top: 50px;
+        font-size: 28px;
+    }
+    .bg{
+        height: 225px;
+    }
+    .bg:before {
+        height: 225px;
+    }
+    .title span:first-child {
+        font-size: 18px;
+    }
+    .adress{
+        padding: 10px;
+    }
+    #page-top{
+        right: 40px;
+        bottom: 250px;
+    }
+    .aboutus h1{
+        padding: 20px;
+    }
+}
+@media screen and (min-width:700px) {
+    .main{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .typ{
+        padding-top: 120px;
+        max-width: 450px;
+    }
+    .service img{
+        width:900px;
+    }
+    .aboutus p{
+        max-width: 600px;
+    }
+    .flex img{
+        width: 200px !important;
+    }
+}
+@media screen and (min-width:900px){
+    .typ{
+        max-width: 860px;
+        padding-top: 270px;
+    }
+    .aboutus p{
+        max-width: 860px;
+        text-align: center;
+    }
+    .service img{
+        width:100%;
+        height: 500px;
+        margin-bottom: 50px;
+    }
+    .service h2{
+        font-size: 70px;
+        top: -160px;
+        left: 110px;
+    }
+    .icon{
+        width: 200px !important;
+        margin: 0px;
+    }
+    .flex img{
+        margin-right: 100px;
+        height: 200px;
+    }
+    .flex{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    .adress{
+        padding: 43px;
+        width: 750px;
+    }
+    .bg{
+        height: 230px;
+        padding: 30px;
+    }
+    .bg:before {
+        height: 230px;
+    }
+}
+@media screen and (min-width:1500px){
+    .adress{
+        padding: 50px;
+        width: 1500px;
+    }
+    .main {
+        background: url(../img/pc-large.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 700px;
+    }
+    .adress h1{
+        font-size: 35px;
+    }
+    .adress p{
+        font-size:25px;
+        margin-top: 30px;
+    }
+    .title span:first-child {
+        font-size: 35px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .title span:last-child {
+        font-size:25px;
+    }
+    #page-top a{
+        width: 150px;
+        height: 150px;
+    }
+    #page-top{
+        bottom: 400px;
+        height:80px;
+        width:80px;
+    }
+    #page-top a::before {
+        right: 70px;
+        top: -100px;
+        font-size: 40px;
+    }
+    .bg{
+        height: 330px;
+    }
+    .bg.-visible:before {
+        height: 330px;
+    }
+    header{
+        height:110px;
+    }
+    .companyname h2{
+        font-size: 40px;
+    }
+    .pc-on a{
+        font-size: 30px;
+        margin-top: 40px;
+    }
+    .flex img{
+        height: 200px !important;
+        width: 200px !important;
+    }
+    .aboutus h1{
+        font-size:30px !important;
+        margin-top: 50px;
+        padding: 35px;
+        max-width: max-content;
+    }
+    .aboutus p{
+        font-size: 20px;
+        line-height: 60px;
+        margin-bottom: 100px;
+    }
+    .flex h3{
+        font-size: 35px;
+        padding-bottom: 15px;
+        margin-bottom: 100px;
+    }
+    .service p{
+        font-size: 25px;
+        max-width: max-content;
+    }
+}
+@media screen and (min-width:1200px){
+    .pc-on{
+        display: block;
+        padding:20px 0px;
+    }
+    .pc-on a {
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        text-decoration: none;
+        font-size: 25px;
+        text-decoration: none;
+        margin-right: 40px;
+    }  
+    .pc-on a:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+        transform: translate(-100%, 0);
+        transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+        content: "";
+    } 
+    .pc-on a:hover{
+        color: #fff;
+    }
+    .pc-on a:hover:after {
+        transform: translate(0, 0);
+    } 
+    .pc-on ul{
+        list-style: none;
+        display: flex;
+    }
+    .hamburger-menu{
+        display: none;
+    }
+    .companyname{
+        margin-left: 60px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .companyname h2{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:1500px){
+    .main {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 700px;
+    }
+}
+@media screen  and (max-width:900px){
+    .main{
+        height: 500px;
+    }
+}
