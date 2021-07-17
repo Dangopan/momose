@@ -6,11 +6,12 @@ header,footer{
     color: white;
     background-color: #222 !important;
 }
-body{
-    font-family: serif !important;
-}
 section{
     margin: auto;
+    font-family: serif !important;
+}
+dl, ol, ul {
+    margin-bottom: 1rem !important;
 }
 .pc-on{
     display: none;
@@ -76,6 +77,7 @@ section{
     padding: 70px 10px 0;
     margin-left: 30px;
     list-style: none;
+    margin-bottom: 16px;
 }
 .menu-content ul li {
     border-bottom: solid 1px #ffffff;
@@ -328,6 +330,9 @@ footer p{
         max-width: 1000px;
         margin:auto;
     }
+    header{
+        height:110px;
+    }
     .service p{
         font-size: 25px;
         max-width: max-content;
@@ -367,7 +372,8 @@ footer p{
     .pc-on ul{
         list-style: none;
         display: flex;
-        padding-top: 20px;
+        padding: 20px 0px;
+        margin: 0px;
     }
     .hamburger-menu{
         display: none;
@@ -379,10 +385,6 @@ footer p{
     }
     .companyname h2{
         font-size: 25px;
-    }
-    
-    header,footer{
-        padding: 0px 70px;
     }
     #page-top{
         right: 110px;
