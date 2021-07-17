@@ -330,7 +330,14 @@ footer{
 .bg.-visible:before {
   transform: translate(0, 0);
 }
-
+.contact a{
+    text-decoration: none;
+    color: #fff;
+}
+.contact a:hover{
+    color: #010079;
+    text-shadow: 0 0 5px white;
+}
 .bg:before {
   display: block;
   position: absolute;
@@ -348,8 +355,8 @@ footer{
 .title {
   display: block;
   color: #fff;
+  /* background:linear-gradient(#7e46bdb8, #a1adac); */
 }
-
 .title span {
   display: block;
   opacity: 0;
