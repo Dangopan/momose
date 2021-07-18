@@ -58,30 +58,63 @@
         </div>
     </header>
     <section>
-        <h1>※このページは制作中です</h1>
+        <span>※練習のため、形だけです。phpの知識はありません。</span>
+        <div class="form">
+            <div class="formmozi">
+                <h1>お問い合わせ</h1>
+                <form>
+                    <div class="flex">
+                        <label for="name">お名前(必須)</label><br>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="flex">
+                        <label for="email">メールアドレス(必須)</label><br>
+                        <input type="mail" id="email" name="email" placeholder="info@sample.com">
+                    </div>
+                    <div class="flex">
+                        <label for="tel">電話番号</label><br>
+                        <input type="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" placeholder="090-1234-5678">
+                    </div>
+                    <div class="flex">
+                        <label for="message">お問い合わせ内容(必須)</label><br>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <div class="flex">
+                        <label for="response">返信を希望しますか？(必須)</label><br>
+                        <div class="radio">
+                            <input type="radio" name="response" class="response">はい
+                            <input type="radio" name="response" class="response">いいえ
+                        </div>
+                    </div>
+                    <p>※必須項目は必ずご入力ください</p>
+                    <input type="submit" value="送信する" class="submit">
+                </form>
+            </div>
+        </div>
+
         <div id="page-top"><a href="#"></a></div>
-            <script>
-                $(function () {
-                    var topBtn = $('#page-top');
-                    topBtn.hide();
+        <script>
+            $(function () {
+                var topBtn = $('#page-top');
+                topBtn.hide();
 
-                    $(window).scroll(function () {
-                        var w = $(window).width();
-                        if ($(this).scrollTop() > 100) {
-                            topBtn.fadeIn();
-                        } else {
-                            topBtn.fadeOut();
-                        }
-                    });
-
-                    topBtn.click(function () {
-                        $('body,html').animate({
-                            scrollTop: 0
-                        }, 500);
-                        return false;
-                    });
+                $(window).scroll(function () {
+                    var w = $(window).width();
+                    if ($(this).scrollTop() > 100) {
+                        topBtn.fadeIn();
+                    } else {
+                        topBtn.fadeOut();
+                    }
                 });
-            </script>
+
+                topBtn.click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 500);
+                    return false;
+                });
+            });
+        </script>
     </section>
     <footer>
         <div class="adress">
